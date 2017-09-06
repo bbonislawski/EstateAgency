@@ -15,7 +15,7 @@ const getForm = (state, form) => {
 }
 
 const sendCredentials = (route, credentials) => {
-  return fetch(`http://localhost:8080/auth/${route}`, {
+  return fetch(`/auth/${route}`, {
     headers: new Headers({
       'Content-Type': 'application/json'
     }),

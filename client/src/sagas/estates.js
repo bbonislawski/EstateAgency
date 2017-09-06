@@ -32,7 +32,7 @@ const selectedPicture = (state) => {
 }
 
 const fetchEstates = () => {
-  return fetch('http://localhost:8080/estates', {
+  return fetch('/estates', {
     headers: new Headers({
       'Content-Type': 'application/json'
     })
@@ -41,7 +41,7 @@ const fetchEstates = () => {
 };
 
 const deleteServerEstate = (id) => {
-  return fetch(`http://localhost:8080/estates/${id}`, {
+  return fetch(`/estates/${id}`, {
     headers: new Headers({
       'Content-Type': 'application/json',
 			'x-access-token': localStorage.getItem('token')
@@ -57,7 +57,7 @@ const deleteServerEstate = (id) => {
 }
 
 const postServerEstate = (estate) => {
-  return fetch('http://localhost:8080/estates', {
+  return fetch('/estates', {
     headers: new Headers({
       'Content-Type': 'application/json',
 			'x-access-token': localStorage.getItem('token')
