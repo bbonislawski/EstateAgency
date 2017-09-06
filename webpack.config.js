@@ -1,7 +1,7 @@
 "use strict";
 
 const merge = require('webpack-merge');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+//const UglifyJSPlugin = require('uglifyjs-webpack-plugin') //to probowalem uzyc dodajac case: production ogolnie lokalnie sie budowalo i to z 3 razy mniejszym rozmiarem
 const PATHS = require('./webpack-paths');
 const loaders = require('./webpack-loaders');
 
