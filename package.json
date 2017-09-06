@@ -7,7 +7,7 @@
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server",
     "api": "babel-node server.js",
-    "build": "NODE_ENV=production webpack"
+    "build": "NODE_ENV=build webpack"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -30,8 +30,7 @@
     "redux-auth-wrapper": "^1.1.0",
     "redux-immutable": "^4.0.0",
     "redux-saga": "^0.15.3",
-    "redux-toastr": "^1.1.4",
-    "uglifyjs-webpack-plugin": "^0.4.6"
+    "redux-toastr": "^1.1.4"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

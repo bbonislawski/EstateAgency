@@ -43,12 +43,6 @@ switch(process.env.NODE_ENV) {
 				port: 3000
 			})
 		);
-		case 'production':
-		config=merge(common,{
-			plugins: [
-			new UglifyJSPlugin()
-			]
-		});
 }
 
 module.exports = config;
