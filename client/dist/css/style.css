@@ -1,0 +1,389 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 2px solid black;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-weight: bold;
+  color: black; /* IE8 proofing */
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 800px;
+  }
+}
+
+
+/* custom */
+@font-face {
+  font-family: PressStartFont;
+  src: url(../fonts/glyphicons-halflings-regular.ttf);
+}
+body {
+  font-family: PressStartFont;
+  background-image: url('http://lairdnortonproperties.com/imgs/2/a4d9f1bafcd2f765dcca24e0f40b244b8eb7113f/1/img.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: inherit;
+  filter: alpha(Opacity=90);
+  opacity: 0.9;
+
+  /*background: #00173E; 
+  background: -webkit-linear-gradient(#00173E, #6899F8);
+  background: -o-linear-gradient(#00173E, #6899F8); 
+  background: -moz-linear-gradient(#00173E, #6899F8); 
+  background: linear-gradient(#00173E, #6899F8); 
+  */
+}
+#content {
+  height:inherit;
+}
+.main {
+  background-image: url('http://lairdnortonproperties.com/imgs/2/a4d9f1bafcd2f765dcca24e0f40b244b8eb7113f/1/img.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  //font-family: PressStartFont;
+  font-size:20px;
+  height: inherit;
+  filter: alpha(Opacity=90);
+  opacity: 0.9;
+
+}
+
+@media screen and (min-width: 1350px) {
+    .main {
+      background-size: 100% 100%;
+    }
+}
+
+nav {
+  font-size: 30px;
+}
+
+.lead .btn {
+    color: black;
+    border: 2px solid;
+    width: 50%;
+}
+
+.header-logo {
+  width: 200px;
+}
+.btn-submit {
+  background-color: #0c8a27;
+  color: white;
+  border: 2px solid white;
+}
+.lead .btn:hover, .btn-submit:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar {
+  min-height: 75px;
+  background-color: initi al;
+}
+.navbar-brand {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    width: 300px;
+    padding: 80px;
+}
+.navbar-inverse {
+  border-color: transparent;
+}
+.view {
+    height:100%;
+    color:white;
+    font-size:20px;
+}
+/*body {
+font-family: PressStartFont;
+
+}
+
+@font-face {
+    font-family: PressStartFont;
+    src: url(PressStart2P.ttf);
+}*/
+footer {
+  bottom:0;
+  position:absolute;
+  width:100%;
+}
+
+.thumbnail img {
+  min-width:350px;
+  min-height:250px;
+}
+
+.row {
+  padding-top: 3em;
+}
+.description-thumbnail {
+  height: 100px;
+}
+.scrollable {
+  overflow:scroll; height:900px;
+}
+.thumbnail {
+  background-color: transparent;
+  border-color: black;
+}
+.thumbnail .caption {
+  color: white;
+}
+.search-bar::-webkit-input-placeholder,
+#name::-webkit-input-placeholder,
+#description::-webkit-input-placeholder,
+#year::-webkit-input-placeholder {
+   color: black;
+}
+
+.search-bar:-moz-placeholder,
+#name:-moz-placeholder,
+#description:-moz-placeholder,
+#year:-moz-placeholder { /* Firefox 18- */
+   color: black;
+}
+
+.search-bar::-moz-placeholder
+#name::-moz-placeholder,
+#description::-moz-placeholder,
+#year::-moz-placeholder {  /* Firefox 19+ */
+   color: black;
+}
+
+.search-bar:-ms-input-placeholder
+#name:-ms-input-placeholder,
+#description:-ms-input-placeholder,
+#year:-ms-input-placeholder {
+   color: black;
+}
+.search-bar {
+  background-color: transparent;
+  border-color: black;
+  border:2px solid black;
+}
+
+.panel.panel-default {
+  background-color: transparent;
+  font-size: 14px;
+  border-color: black;
+  margin-top: 2em;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    border-radius: 4px;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.panel-default>.panel-heading {
+  background-color: #d9534f;
+  color: black;
+}
+.panel-default input, .panel-default textarea{
+  background-color:transparent;
+  border: 2px solid black;
+}
+.panel-body input, .panel-body textarea {
+  color:black;
+  border: 2px solid black;
+}
+.modal-content {
+  background: #2d2d2c; /* For browsers that do not support gradients */
+  font-size:15px;
+}
+.modal-header {
+  border-top: 2px solid black;
+}
+.modal-footer {
+  border: initial;
+}
+.img-big {
+  min-width: 100%;
+}
+.img-upload {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.thumbnail-frame {
+  overflow:hidden;
+  height:250px;
+}
+.thumbnail-pic {
+  height:250px;
+  width:100%;
+}
+.wrapper {
+  height:100%
+}
+.add-game-panel h5{
+  text-align: right;
+  margin-right:15px;
+}
+
+.add-game-panel span{
+  cursor:pointer;
+}
+
+.add-game-panel span:hover{
+  color:yellow;
+  text-decoration:underline;
+}
