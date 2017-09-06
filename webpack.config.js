@@ -1,7 +1,7 @@
 "use strict";
 
 const merge = require('webpack-merge');
-
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const PATHS = require('./webpack-paths');
 const loaders = require('./webpack-loaders');
 
@@ -43,6 +43,12 @@ switch(process.env.NODE_ENV) {
 				port: 3000
 			})
 		);
+		case 'production':
+		config=merge(common,{
+			plugins: [
+			new UglifyJSPlugin()
+			]
+		});
 }
 
 module.exports = config;
